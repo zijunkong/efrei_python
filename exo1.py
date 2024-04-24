@@ -64,5 +64,3 @@ ex12 = ex12.replace("42","quarante-deux ")
 a = 24
 b = 42
 a,b = b,a
-
-
