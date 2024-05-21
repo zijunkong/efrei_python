@@ -1,9 +1,14 @@
-age = 17
-print(f"Vous ne pouvez pas entrer vous n’êtes pas majeur vous avez {age}" if age < 18 else f"ous pouvez entrer vous êtes majeur vous avez {age}")
+age = int(input("quel est votre age ?"))
+if age < 18 :
+    print(f"Vous ne pouvez pas entrer vous n’êtes pas majeur vous avez {age}")
+elif 18 <= age < 42 :
+    print(f"Vous pouvez entrer vous êtes majeur vous avez {age}")
+elif age >= 42 :
+    print(f"vous etes patron de la boite")
 
 #Créer un algorithme qui retourne : “Cool” quand la valeur est comprise entre 0 et 10. “Tepid” quand la valeur est comprise entre 11 et 20. “Warm” quand la valeur est comprise entre 21 et 30. Cette condition devra utiliser une variable “rand” avec un nombre aléatoire compris entre 0 et 30.
 import random
-rand = random.int(0,30)
+rand = random.randint(0,30)
 if rand <= 10:
     print("Cool")
 elif rand >= 11 and rand <= 20 :
@@ -59,7 +64,7 @@ else:
     print("Erreur : la remise est trop élevée.")
 
 #Vérifier si un nombre saisi par l'utilisateur est pair ou non. Le programme demande à l'utilisateur d'entrer un nombre, puis il vérifie si le nombre est pair ou impair. Si c'est le cas, le programme affiche que le nombre est pair. Sinon, il affiche que le nombre n'est pas pair.
-nombre = input("Veuillez entrer un nombre : ")
+nombre = int(input("Veuillez entrer un nombre : "))
 if nombre%2 == 0 :
     print("le nombre est pair")
 else :
